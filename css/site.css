@@ -1,0 +1,57 @@
+*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0}
+img{max-width:100%;height:auto;display:block}a{color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ico{width:1em;height:1em;vertical-align:-.12em;fill:currentColor}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+.fs{--paper:#a9d8c6;--paper2:#93c9b4;--ink:#1d2747;--red:#991d27;--bg:#26303f;background:var(--bg);color:var(--ink);font:16px/1.5 'Fira Sans',sans-serif;padding-block:0 30px;min-height:100vh}
+.fs ::selection{background:var(--ink);color:var(--paper)}
+.fs .bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 20px;padding:14px max(16px,4%);color:var(--paper);max-width:1160px;margin:0 auto}
+.fs .bar a.home{display:flex;align-items:center;gap:10px;font:400 22px 'Pathway Gothic One',sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.fs .bar a.home svg{width:36px;height:36px}
+.fs .bar nav{display:flex;flex-wrap:wrap;gap:4px 18px;font:400 17px 'Pathway Gothic One',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.fs .bar nav a{color:#d7ece3;text-decoration:none;border-bottom:2px solid transparent;padding:2px 0}
+.fs .bar nav a:hover,.fs .bar nav a[aria-current]{border-color:var(--paper);color:#fff}
+.fs .wrapc{max-width:1160px;margin:0 auto}
+.fs .ticket{margin:10px max(16px,4%) 0;display:grid;grid-template-columns:minmax(0,1fr) 170px;background:var(--paper);position:relative;box-shadow:0 18px 34px -14px rgba(0,0,0,.6)}
+.fs .ticket::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(29,39,71,.05) 3px 4px);pointer-events:none}
+@media (max-width:640px){.fs .ticket{grid-template-columns:minmax(0,1fr)}}
+.fs .main{padding:18px 22px 20px;position:relative}
+.fs .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font:400 16px 'Pathway Gothic One',sans-serif;letter-spacing:.14em;text-transform:uppercase;border-bottom:2px solid var(--ink);padding-bottom:6px}
+.fs .ser{font:600 15px 'Fira Sans',sans-serif;color:var(--red);letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.fs h1{font:400 clamp(44px,8vw,86px)/.9 'Pathway Gothic One',sans-serif;text-transform:uppercase;margin:14px 0 6px;letter-spacing:.01em;text-wrap:balance}
+.fs .when{font:600 17px 'Fira Sans',sans-serif;margin:0 0 14px}
+.fs .pick{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;margin-bottom:12px}
+.fs .pick label{display:grid;gap:2px;font:400 14px 'Pathway Gothic One',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.fs .pick select{font:15px 'Fira Sans',sans-serif;padding:7px 8px;border:2px solid var(--ink);background:var(--paper2);color:var(--ink);min-width:0}
+.fs .buy{font:400 20px 'Pathway Gothic One',sans-serif;letter-spacing:.14em;text-transform:uppercase;background:var(--ink);color:var(--paper);border:0;padding:9px 20px;cursor:pointer;text-decoration:none;display:inline-block}
+.fs .buy:hover{background:var(--red)}
+.fs .out{margin:10px 0 0;font-size:14px;min-height:1.5em}
+.fs .stub{border-left:3px dashed var(--bg);padding:18px 14px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;position:relative;background:var(--paper2)}
+@media (max-width:640px){.fs .stub{border-left:0;border-top:3px dashed var(--bg);flex-direction:row;flex-wrap:wrap}}
+.fs .stub div{font:400 15px 'Pathway Gothic One',sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.fs .stub b{display:block;font:400 34px/1 'Pathway Gothic One',sans-serif}
+.fs .reverse{margin:16px max(16px,4%) 0;background:#e6efe9;color:var(--ink);padding:18px 22px 20px}
+.fs .reverse h2{font:400 26px 'Pathway Gothic One',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0 0 6px}
+.fs .reverse h3{font:400 21px 'Pathway Gothic One',sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:22px 0 4px;color:var(--red)}
+.fs .reverse ol{list-style:none;margin:0;padding:0}
+.fs .reverse li{display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:7px 0;border-bottom:1px solid #b7c9be;font-size:15px}
+@media (max-width:560px){.fs .reverse li{grid-template-columns:66px minmax(0,1fr)}.fs .reverse li i{grid-column:2}}
+.fs .reverse li span:first-child{font:600 14px 'Fira Sans',sans-serif;font-variant-numeric:tabular-nums}
+.fs .reverse li i{font-size:13px;color:#47506b;font-style:normal}
+.fs .reverse p{margin:10px 0 0;font-size:15px;max-width:72ch}
+.fs .reverse .lede{font-size:18px;margin-top:0}
+.fs .films{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:12px}
+.fs .films figure{margin:0;background:#fff;padding:8px 8px 12px}
+.fs .films img{aspect-ratio:4/3;object-fit:cover;width:100%;filter:grayscale(.2)}
+.fs .films b{display:block;font:400 22px/1.1 'Pathway Gothic One',sans-serif;letter-spacing:.04em;text-transform:uppercase;margin-top:8px}
+.fs .films span{display:block;font-size:14px;color:#47506b}
+.fs .films p{font-size:14px;margin:6px 0 0}
+.fs .pic{float:right;width:min(46%,420px);margin:0 0 12px 20px;border:8px solid #fff}
+@media (max-width:640px){.fs .pic{float:none;width:100%;margin:0 0 12px}}
+.fs .horse{width:120px;float:left;margin:0 18px 8px 0}
+.fs dl.k{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 16px;margin:10px 0}
+.fs dl.k dt{font:400 16px/1.6 'Pathway Gothic One',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#47506b}
+.fs dl.k dd{margin:0}
+.fs footer{margin:22px max(16px,4%) 0;color:#c2d6ce;font-size:13px;line-height:1.7}
+.fs footer a{color:#e6efe9}
